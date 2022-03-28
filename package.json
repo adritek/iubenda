@@ -1,14 +1,14 @@
 {
   "name": "ibuneda",
   "version": "1.0.0",
-  "description": "",
+  "description": "Forms document with varied input types and styling",
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adrian Rogers",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
