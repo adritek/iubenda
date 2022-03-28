@@ -1,0 +1,248 @@
+/* utility */
+:root {
+  --toggle-width: 35px;
+  --toggle-height: 14px;
+}
+
+.d--f {
+  display: flex;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+/* Housekeepinbg */
+html {
+  background-color: lightslategray;
+}
+
+main {
+  padding: 1em;
+  margin: 1em;
+  background-color: white;
+}
+
+.page-main-header {
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.compliance-header {
+  align-items: center;
+}
+
+#model-aok {
+  outline: 1px solid #eaeaea;
+  border-radius: 7px;
+  justify-content: space-between;
+  align-items: center;
+  /* background-size: contain;
+  height: 100%; */
+}
+
+span.model-checkmark {
+  background-image: url('/images/icon_checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  background-color: #ebf8f4;
+  border-radius: 7px 0 0 7px;
+}
+
+.model-btn-close {
+  align-self: flex-start;
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+  font-size: 0.1em;
+  padding: 0;
+  margin: 3px 3px 0 0;
+}
+
+.switch {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 25px;
+  background-color: lightgray;
+  border-radius: 40px;
+  border: 1px solid #55af87;
+  outline: none;
+  position: relative;
+  transition: 200ms;
+}
+
+.switch:checked {
+  background-color: #5abe90 !important;
+  border: 1px solid #5abe90;
+}
+.switch:before {
+  content: '';
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: 200ms;
+}
+.switch:checked:before {
+  left: 23px;
+}
+
+/* Form reset (remove defaults) */
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea {
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+  font: 1.25rem / 1.5 sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+
+select {
+  background: url('/images/down-arrow.svg') no-repeat center right 0.75rem;
+}
+
+/* input[type='radio']:checked {
+  background-image: radial-gradient(hsl(151, 53%, 71%) 40%, transparent calc(40% + 1px));
+} */
+
+input[type='checkbox']:checked {
+  background: url('/images/check.svg') no-repeat center / 75% auto;
+}
+
+button {
+  font: 1.25rem sans-serif;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px black;
+}
+
+button[type='submit'] {
+  background-color: #5abe90;
+  color: white;
+}
+
+button[type='submit']:hover {
+  background-color: #4fa77e;
+}
+
+button[type='reset'] {
+  text-decoration: underline;
+}
+
+button[type='reset']:hover {
+  text-decoration: none;
+}
+/* Form focus */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(157, 230, 168, 0.749);
+}
+
+/* Position */
+
+/* Theme */
+fieldset.d--f {
+  gap: 1em;
+}
+
+fieldset.d--f > * {
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+input[type='radio'] {
+  width: 276px;
+  min-height: 172px;
+}
+
+#dark-theme {
+  background-image: url('/images/fake_banner_dark.png');
+  background-repeat: no-repeat;
+}
+#light-theme {
+  background-image: url('/images/fake_banner_light.png');
+  background-repeat: no-repeat;
+}
+#custom-theme {
+  background-image: url('/images/fake_banner_dark.png');
+  background-repeat: no-repeat;
+}
+
+input[type='radio']:checked,
+input[type='radio']:active {
+  border: 3px solid #4fa77e;
+  /* background-color: #4fa77e; */
+}
+/* Button group */
+#button-group {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* legislation test */
+/* hide button */
+.legislation > div input[type='radio'] {
+  display: hidden;
+  height: 0;
+  width: 0;
+  border: 0;
+}
+/* if button checked apply style AND style to label as well */
+.legislation > div input[type='radio']:checked + label {
+  border: 2px solid hotpink;
+}

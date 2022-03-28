@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iubenda - Adrian Rogers github:adritek</title>
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- todo add svg ico -->
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="page-main-header d--f"><img src="./images/icon_checkmark.svg" alt="Company logo" /> ibuenda</header>
+    <main>
+      <header class="main-header d--f">
+        <div class="client-header d--f">
+          <img aria-hidden="true" src="./images/icon_checkmark.svg" alt="A computer monitor" />
+          <div class="client-info">
+            <p class="account-header">Account & Billing Info</p>
+            <p class="web-address">www.domain.com</p>
+          </div>
+        </div>
+        <div class="compliance-header d--f">
+          <p>Your current compliance rating</p>
+          <img src="./images/icon_checkmark.svg" alt="Compliance rating 23%" />
+        </div>
+      </header>
+      <hr />
+      <div id="model-aok" class="d--f">
+        <span class="model-checkmark" aria-hidden="true"></span>
+        <p>Your website has been created and your legal documents have been generated. Setup you cookie banner and privacy policy button to complete the integration.</p>
+        <button class="model-btn-close">X</button>
+      </div>
+      <header class="d--f">
+        <input type="checkbox" class="switch" />
+        <h2>Add a cookie banner</h2>
+      </header>
+      <form>
+        <fieldset class="d--f">
+          <div>
+            <label for="position-select">Position </label>
+            <select name="position" id="position-select">
+              <!-- <option data-option-thumbnail="./images/fake_banner_dark.png" value="select-position">&#9660;</option> -->
+              <option value="sideways">sideways</option>
+              <option value="slantways">slantways</option>
+              <option value="longways">longways</option>
+              <option value="backways">backways</option>
+            </select>
+          </div>
+          <!-- <legend>Theme</legend> -->
+          <div>
+            <input type="radio" name="banner-theme" value="dark" id="dark-theme" checked />
+            <!-- <img src="./images/fake_banner_dark.png" alt="dark theme" /> -->
+            <label for="dark-theme">Dark</label>
+          </div>
+
+          <div>
+            <input type="radio" name="banner-theme" value="light" id="light-theme" />
+            <!-- <img src="./images/fake_banner_light.png" alt="light theme" /> -->
+            <label for="light-theme"> Light </label>
+          </div>
+
+          <div>
+            <input type="radio" name="banner-theme" value="custom" id="custom-theme" />
+            <!-- <img src="./images/fake_banner_light.png" alt="custom theme" /> -->
+            <label for="custom-theme"> Custom style </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="d--f legislation">
+          <legend>Legislation</legend>
+          <div>
+            <input type="radio" name="legislation" value="gdpr" id="gdpr" checked />
+            <label for="gdpr" class="">GDPR Only</label>
+          </div>
+          <div>
+            <input type="radio" name="legislation" value="ccpa" id="ccpa" />
+            <label for="ccpa" class="">CCPA Only</label>
+          </div>
+          <div>
+            <input type="radio" name="legislation" value="both-gdpr-ccpa" id="both-gdpr-ccpa" />
+            <label for="both-gdpr-ccppa" class="">Both GDPR and CCPA</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Require consent from</legend>
+          <label for="eu-consent" class="sr-only">EU Only</label>
+          <input type="radio" name="req-consent" value="eu-only" id="eu-consent" checked />
+          <label for="ww-consent" class="sr-only">World Wide</label>
+          <input type="radio" name="req-consent" value="world-wide" id="ww-consent" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Banner buttons</legend>
+          <input type="checkbox" name="legi" id="gdpr" />
+          <input type="checkbox" name="legi" id="ccpa" />
+        </fieldset>
+
+        <div id="button-group" class="d--f">
+          <button type="reset">Reset settings</button>
+          <button type="submit">Integrate</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
