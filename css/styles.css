@@ -20,17 +20,15 @@
 
 .button {
   display: inline-block;
-  padding: 0.35em 1.2em;
+  padding: 1.35em 2.2em;
   border: 0.1em solid #5abe90;
   margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
+  border-radius: 0.5em;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
   color: #5abe90;
   text-align: center;
-  transition: all 0.2s;
 }
 
 button:hover {
@@ -47,7 +45,7 @@ button:hover {
 
 /* Housekeepinbg */
 html {
-  background-color: lightslategray;
+  background-color: #f1f1f1;
 }
 
 main {
@@ -64,6 +62,14 @@ main {
 .main-header {
   align-items: center;
   justify-content: space-between;
+  margin: 15px 0 20px 0;
+}
+
+i.fa-solid.fa-desktop{
+  padding: 6px;
+  background-color: lightgray;
+  margin-right: 10px;
+  font-size:2em;
 }
 
 .compliance-header {
@@ -75,8 +81,6 @@ main {
   border-radius: 7px;
   justify-content: space-between;
   align-items: center;
-  /* background-size: contain;
-  height: 100%; */
 }
 
 span.model-checkmark {
@@ -171,10 +175,6 @@ textarea {
 select {
   background: url('/images/down-arrow.svg') no-repeat center right 0.75rem;
 }
-
-/* input[type='radio']:checked {
-  background-image: radial-gradient(hsl(151, 53%, 71%) 40%, transparent calc(40% + 1px));
-} */
 
 input[type='checkbox']:checked {
   background: url('/images/check.svg') no-repeat center / 75% auto;
